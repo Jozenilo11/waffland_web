@@ -3,7 +3,7 @@ import { MessageCircle, Instagram, MapPin, Clock } from "lucide-react";
 import { WHATSAPP_LINK } from "./Header";
 import { FaWhatsapp } from "react-icons/fa";
 
-export const INSTAGRAM_LINK = "https://instagram.com/waffland";
+export const INSTAGRAM_LINK = "https://www.instagram.com/waffland3?igsi=MWd2MGc0MTZsdHBndw==";
 
 export default function Contact() {
   return (
