@@ -3,6 +3,7 @@ import { Instagram, MessageCircle, Heart } from "lucide-react";
 import WafflandLogo from "./WafflandLogo";
 import { WHATSAPP_LINK } from "./Header";
 import { INSTAGRAM_LINK } from "./Contact";
+import { FaWhatsapp } from "react-icons/fa";
 
 const NAV = [
   { label: "Inicio", href: "#inicio" },
@@ -32,7 +33,7 @@ export default function Footer() {
                 aria-label="WhatsApp"
                 className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#25D366] flex items-center justify-center transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
               </a>
               <a
                 href={INSTAGRAM_LINK}
@@ -68,7 +69,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#FBB03B] text-[#6E4D42] font-heading font-bold px-5 h-12 rounded-full hover:bg-[#F39C12] transition-colors"
             >
-              <MessageCircle className="w-4 h-4" />
+              <FaWhatsapp className="w-4 h-4" />
               Pedir por WhatsApp
             </a>
           </div>

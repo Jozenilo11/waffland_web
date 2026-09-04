@@ -1,6 +1,7 @@
 import React from "react";
 import { MessageCircle, Instagram, MapPin, Clock } from "lucide-react";
 import { WHATSAPP_LINK } from "./Header";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const INSTAGRAM_LINK = "https://instagram.com/waffland";
 
@@ -25,7 +26,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="group bg-[#25D366] rounded-[1.75rem] p-7 text-white hover:-translate-y-1 transition-transform shadow-lg"
           >
-            <MessageCircle className="w-9 h-9 mb-3" />
+            <FaWhatsapp className="w-9 h-9 mb-3" />
             <h3 className="font-heading font-bold text-2xl">WhatsApp</h3>
             <p className="mt-1 text-white/90">Cuéntanos tu pedido y tu mensaje. Te respondemos al instante.</p>
             <span className="mt-4 inline-flex items-center gap-1 font-heading font-semibold text-sm group-hover:gap-2 transition-all">

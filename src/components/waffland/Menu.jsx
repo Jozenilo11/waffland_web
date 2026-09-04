@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { WHATSAPP_LINK } from "./Header";
+import { FaWhatsapp } from "react-icons/fa";
 
 const PRODUCTS = [
   {
@@ -103,7 +104,7 @@ export default function Menu() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1eb855] text-white font-heading font-bold text-base px-7 h-14 rounded-full transition-colors shadow-[0_10px_28px_-10px_rgba(37,211,102,0.8)]"
           >
-            <MessageCircle className="w-5 h-5" />
+            <FaWhatsapp className="w-5 h-5" />
             Pide tu favorito por WhatsApp
           </a>
         </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { WHATSAPP_LINK } from "./Header";
 import { Image } from "@/components/ui/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 const HERO_IMG =
   "https://media.base44.com/images/public/6a9a3ab759ed94159d8f0699/fa559a465_generated_image.png";
@@ -32,17 +33,14 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         <div className="text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-1.5 rounded-full text-[#6E4D42] font-heading font-semibold text-sm shadow-sm border border-[#FBB03B]/30">
-            <Sparkles className="w-4 h-4 text-[#FF7BAC]" />
-            Hecho con amor en Colombia
-          </span>
+          
 
           <h1 className="mt-5 font-heading font-bold text-[#6E4D42] text-5xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight text-balance">
             Endúlzate con{" "}
             <span className="relative inline-block">
               <span className="text-[#FBB03B]">Waffland</span>
               <svg viewBox="0 0 200 14" className="absolute -bottom-2 left-0 w-full h-3" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M2 8 C 60 2, 140 2, 198 8" stroke="#FF7BAC" strokeWidth="4" fill="none" strokeLinecap="round" />
+                <path d="M2 8 C 60 2, 140 2, 198 8" stroke="#6E4D42" strokeWidth="4" fill="none" strokeLinecap="round" />
               </svg>
             </span>
           </h1>
@@ -53,15 +51,16 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#FBB03B] hover:bg-[#F39C12] text-[#6E4D42] font-heading font-bold text-base px-7 h-14 rounded-full transition-colors shadow-[0_10px_28px_-10px_rgba(251,176,59,0.8)]"
-            >
-              Pedir ahora
-              <ArrowRight className="w-5 h-5" />
-            </a>
+           <a
+  href={WHATSAPP_LINK}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-2 bg-[#FBB03B] hover:bg-[#F39C12] text-[#6E4D42] font-heading font-bold text-base px-7 h-14 rounded-full transition-colors shadow-[0_10px_28px_-10px_rgba(251,176,59,0.8)]"
+>
+  <FaWhatsapp className="w-5 h-5" />
+  Pedir ahora
+  <ArrowRight className="w-5 h-5" />
+</a>
             <a
               href="#menu"
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#FFE266]/40 text-[#6E4D42] font-heading font-bold text-base px-7 h-14 rounded-full border-2 border-[#FBB03B] transition-colors"
@@ -91,7 +90,8 @@ export default function Hero() {
             </div>
             {/* sticker decorativo */}
             <div className="absolute -top-4 -right-3 bg-[#FF7BAC] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full rotate-12 shadow-md">
-              ¡Personalízalo!
+              ¡Bienvenidos
+              !
             </div>
           </div>
         </div>

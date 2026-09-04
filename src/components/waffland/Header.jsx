@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu as MenuIcon, X, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import WafflandLogo from "./WafflandLogo";
 
 const NAV = [
@@ -59,7 +60,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb855] text-white font-heading font-semibold text-sm px-5 h-12 rounded-full transition-colors shadow-[0_6px_18px_-8px_rgba(37,211,102,0.7)]"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             Pedir por WhatsApp
           </a>
           <button
@@ -92,7 +93,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-heading font-semibold px-5 h-12 rounded-full"
             >
-              <MessageCircle className="w-4 h-4" />
+              <FaWhatsapp className="w-4 h-4" />
               Pedir por WhatsApp
             </a>
           </nav>
