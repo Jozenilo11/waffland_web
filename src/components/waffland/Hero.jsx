@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative animate-float">
             <div className="absolute -inset-6 bg-[#FFE266]/40 blur-2xl rounded-full" />
-            <div className="relative w-60 sm:w-72 aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl border-4 border-white">
+            <div className="relative w-72 sm:w-[26rem] aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl border-4 border-white">
               <Image
                 src={HERO_IMG}
                 alt="Persona disfrutando un mini waffle de Waffland"

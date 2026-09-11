@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,26 +12,38 @@
     --card-foreground: 16 26% 27%;
     --popover: 0 0% 100%;
     --popover-foreground: 16 26% 27%;
+
     --primary: 32 96% 61%;
     --primary-foreground: 16 26% 27%;
+
     --secondary: 50 100% 84%;
     --secondary-foreground: 16 26% 27%;
+
     --muted: 50 100% 90%;
     --muted-foreground: 16 10% 45%;
+
     --accent: 339 100% 74%;
     --accent-foreground: 16 26% 27%;
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
+
     --border: 32 60% 80%;
     --input: 32 60% 80%;
     --ring: 211 58% 71%;
-    --radius: 1.25rem;
-    --font-heading: "Fredoka", ui-sans-serif, system-ui, sans-serif;
-    --font-body: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
-    --font-display: "Fredoka", ui-sans-serif, system-ui, sans-serif;
-    --font-script: "Caveat", ui-sans-serif, system-ui, cursive;
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
+    --radius: 1.25rem;
+
+    /* FUENTES */
+    --font-heading: "Fredoka", sans-serif;
+    --font-body: "Nunito Sans", sans-serif;
+    --font-display: "Fredoka", sans-serif;
+    --font-script: "Caveat", cursive;
+
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      monospace;
+
+    /* COLORES WAFFLAND */
     --waff-orange: #FBB03B;
     --waff-yellow: #FFE266;
     --waff-pink: #FF7BAC;
@@ -52,34 +66,95 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
     font-size: 1.125rem;
     line-height: 1.6;
+  }
+
+  /* TÍTULOS */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  /* BOTONES */
+  button,
+  a {
+    font-family: var(--font-body);
   }
 }
 
 @layer components {
+  /* FUENTE PARA MENSAJES */
   .font-script {
     font-family: var(--font-script);
   }
+
+  /* FUENTE DE TÍTULOS */
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* FUENTE DISPLAY */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* FUENTE NORMAL */
+  .font-body {
+    font-family: var(--font-body);
+  }
+
   .waffle-grid-bg {
     background-image:
-      linear-gradient(var(--waff-orange) 1px, transparent 1px),
-      linear-gradient(90deg, var(--waff-orange) 1px, transparent 1px);
+      linear-gradient(
+        var(--waff-orange) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        var(--waff-orange) 1px,
+        transparent 1px
+      );
+
     background-size: 22px 22px;
     background-position: -1px -1px;
   }
+
   .waffle-grid-soft {
     background-image:
-      linear-gradient(rgba(251,176,59,0.18) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(251,176,59,0.18) 1px, transparent 1px);
+      linear-gradient(
+        rgba(251, 176, 59, 0.18) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(251, 176, 59, 0.18) 1px,
+        transparent 1px
+      );
+
     background-size: 26px 26px;
   }
+
   .squircle {
     border-radius: 38% 62% 58% 42% / 42% 38% 62% 58%;
   }
+
   .honey-divider {
-    background: linear-gradient(90deg, transparent, var(--waff-orange), var(--waff-yellow), var(--waff-orange), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--waff-orange),
+      var(--waff-yellow),
+      var(--waff-orange),
+      transparent
+    );
+
     height: 6px;
     border-radius: 9999px;
   }
@@ -89,27 +164,55 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .animate-float {
     animation: waff-float 6s ease-in-out infinite;
   }
+
   .animate-drip {
     animation: waff-drip 3s ease-in infinite;
   }
+
   .animate-wobble {
     animation: waff-wobble 8s ease-in-out infinite;
   }
 }
 
 @keyframes waff-float {
-  0%, 100% { transform: translateY(0) rotate(-2deg); }
-  50% { transform: translateY(-14px) rotate(2deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-14px) rotate(2deg);
+  }
 }
+
 @keyframes waff-drip {
-  0% { transform: scaleY(0); transform-origin: top; }
-  40% { transform: scaleY(1); transform-origin: top; }
-  100% { transform: scaleY(1); transform-origin: top; }
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  40% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
 }
+
 @keyframes waff-wobble {
-  0%, 100% { border-radius: 38% 62% 58% 42% / 42% 38% 62% 58%; }
-  50% { border-radius: 58% 42% 42% 58% / 52% 58% 42% 48%; }
+  0%,
+  100% {
+    border-radius: 38% 62% 58% 42% / 42% 38% 62% 58%;
+  }
+
+  50% {
+    border-radius: 58% 42% 42% 58% / 52% 58% 42% 48%;
+  }
 }

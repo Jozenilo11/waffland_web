@@ -17,7 +17,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative order-2 lg:order-1">
-            <div className="relative w-full max-w-md mx-auto aspect-[3/2] overflow-hidden rounded-[2rem] shadow-xl border-4 border-[#FFE266]">
+            <div className="relative w-full max-w-2xl mx-auto aspect-[16/10] overflow-hidden rounded-[2rem] shadow-xl border-4 border-[#FFE266]">
               <Image
                 src={LIFESTYLE_IMG}
                 alt="Mesa acogedora con dos mini waffles y café"
