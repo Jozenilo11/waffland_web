@@ -2,8 +2,7 @@ import React from "react";
 import { Heart, Gift, Smile } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
-const LIFESTYLE_IMG =
-  "https://media.base44.com/images/public/6a9a3ab759ed94159d8f0699/6ed97ba91_generated_8e32ef24.jpg";
+const LIFESTYLE_IMG = "/imagenes/WAFFLAND_2.jpg";
 
 const VALUES = [
   { icon: Heart, title: "Conexión emocional", text: "Cada waffle lleva un mensaje que hace sentir especial a quien lo recibe." },
@@ -13,17 +12,17 @@ const VALUES = [
 
 export default function About() {
   return (
-    <section id="nosotros" className="relative py-20 sm:py-28 bg-white">
+    <section id="nosotros" className="relative py-6 sm:py-10 bg-white">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative order-2 lg:order-1">
-            <div className="relative w-full max-w-2xl mx-auto aspect-[16/10] overflow-hidden rounded-[2rem] shadow-xl border-4 border-[#FFE266]">
-              <Image
-                src={LIFESTYLE_IMG}
-                alt="Mesa acogedora con dos mini waffles y café"
-                fittingType="fill"
-                className="w-full h-full"
-              />
+            <div className="relative w-full max-w-2xl lg:max-w-3xl mx-auto aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl border-4 border-[#FFE266]">
+             <Image
+  src={LIFESTYLE_IMG}
+  alt="Waffles de Waffland"
+  fittingType="fill"
+  className="w-full h-full object-cover"
+/>
             </div>
             <div className="absolute -bottom-6 -right-2 sm:right-6 bg-[#FF7BAC] text-white px-5 py-3 rounded-2xl rotate-3 shadow-lg max-w-[12rem]">
               <p className="font-script text-xl leading-tight">Waffles que enamoran 💛</p>

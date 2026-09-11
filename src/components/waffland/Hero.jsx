@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 sm:pt-32 pb-20 sm:pb-28">
+    <section id="inicio" className="relative overflow-hidden pt-28 sm:pt-32 pb-16 sm:pb-24">
       {/* fondo: degradado cálido + patrón sutil */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-[#FFF7E6] to-[#FFE9C2]" />
       <div className="absolute inset-0 -z-10 waffle-grid-soft opacity-60" />
